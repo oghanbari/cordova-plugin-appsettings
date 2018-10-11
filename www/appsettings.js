@@ -12,7 +12,7 @@ function AppSettings () {
  * @param {Function} successCallback The function to call when the value is available
  * @param {Function} errorCallback The function to call when value is unavailable
  */
-AppSettings.prototype.get = function (keyArray, successCallback, errorCallback) {
+AppSettings.prototype.get5 = function (keyArray, successCallback, errorCallback) {
     try {
         argscheck.checkArgs('AFF', 'AppSettings.get', arguments);
     } catch (exception) {
