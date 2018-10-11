@@ -14,12 +14,12 @@ function AppSettings () {
  */
 AppSettings.prototype.get5 = function (keyArray, successCallback, errorCallback) {
     try {
-        argscheck.checkArgs('AFF', 'AppSettings.get', arguments);
+        argscheck.checkArgs('AFF', 'AppSettings.get5', arguments);
     } catch (exception) {
-        argscheck.checkArgs('AF', 'AppSettings.get', arguments);
+        argscheck.checkArgs('AF', 'AppSettings.get5', arguments);
     }
 
-    exec(successCallback, errorCallback, "AppSettings", "get", keyArray);
+    exec(successCallback, errorCallback, "AppSettings", "get5", keyArray);
 };
 
 module.exports = new AppSettings();
