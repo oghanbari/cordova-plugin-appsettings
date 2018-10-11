@@ -14,7 +14,7 @@
     <issue>https://github.com/mkliu/cordova-plugin-appsettings/issues</issue>
 
     <js-module src="www/appsettings.js" name="AppSettings" >
-        <clobbers target="AppSettings" />
+        <merges target="AppSettings" />
     </js-module>
 
   <!-- android -->
@@ -24,7 +24,6 @@
         <param name="android-package" value="org.apache.cordova.appsettings.AppSettings"/>
       </feature>
     </config-file>
-
     <source-file src="src/android/AppSettings.java" target-dir="src/org/apache/cordova/appsettings" />
   </platform>
 
@@ -35,7 +34,6 @@
         <param name="ios-package" value="AppSettings"/>
       </feature>
     </config-file>
-
     <header-file src="src/ios/AppSettings.h" />
     <source-file src="src/ios/AppSettings.m" />
   </platform>
